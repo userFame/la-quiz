@@ -1,5 +1,5 @@
-#This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-## Note: This project has been ejected
+## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note: This project has been ejected from create-react-app using 'yarn eject' in the cli
 
 
 ### Available Scripts
