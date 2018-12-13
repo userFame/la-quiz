@@ -74,7 +74,6 @@ class QuizAssessment extends React.Component {
     return (
       <Dialog
         aria-labelledby="out-of-time-dialog"
-        aria-labelledby="out-of-time-description"
         open={this.state.startQuiz}
       >
         <DialogTitle>Time has expired</DialogTitle>
@@ -97,7 +96,7 @@ class QuizAssessment extends React.Component {
     return (
       <Dialog
         aria-labelledby="out-of-time-dialog"
-        aria-labelledby="out-of-time-description"
+        aria-describedby="out-of-time-description"
         open={this.state.startQuiz}
       >
         <DialogTitle>You have completed the Quiz!</DialogTitle>
@@ -131,7 +130,9 @@ class QuizAssessment extends React.Component {
           open={this.state.startQuiz && !this.state.sawWarning}
           style={{ color: "black" }}
           onExited={() => {
-            this.state.afterWarning = true;
+            this.setState({
+              afterWarning: true
+            })
             this.timerStore.countdown();
           }}
         >
@@ -178,7 +179,7 @@ class QuizAssessment extends React.Component {
         <div>
           <Dialog
             aria-labelledby="out-of-time-dialog"
-            aria-labelledby="out-of-time-description"
+            aria-describedby="out-of-time-description"
             open={this.state.startQuiz}
           >
             <DialogTitle>

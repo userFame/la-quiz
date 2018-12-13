@@ -35,7 +35,6 @@ class MultiChoice extends Component {
             color: 'black',
             border: '1px solid black',
             padding: '1em', 
-            width: '90%' 
           }}
           className={
             this.state.highlight

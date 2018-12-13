@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
-import * as mobx from 'mobx'
 import Timer from './components/Timer';
 import QuestionCount from './components/QuestionCount';
 import Question from './components/Question';
@@ -25,7 +24,6 @@ class QuizQuestions extends Component {
           allowMultiple={
             this.props.questionsArray[questionIndex].allow_multiple
           }
-          instructions={this.props.questionsArray[questionIndex].instructions}
           highlight={false}
           numOfExamples={this.props.questionsArray[questionIndex].num_of_examples}
         />

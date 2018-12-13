@@ -5,9 +5,6 @@ import { inject, observer } from 'mobx-react';
 @inject('quizAssessmentStore')
 @observer
 class MultiTextAnswer extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     if (this.props.numOfTextBox === 3) {

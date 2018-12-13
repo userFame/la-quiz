@@ -89,9 +89,9 @@ class Question extends Component {
           </div>
         ));
       } else if (this.props.allowMultiple === 1) {
-        let className = this.props.highlight
-          ? 'multiple-choice'
-          : 'multiple-choice-highlight';
+        // let className = this.props.highlight
+        //   ? 'multiple-choice'
+        //   : 'multiple-choice-highlight';
         return this.props.choice.map((choice, i) => (
           <div key={i}>
             <MultiChoice
